@@ -1937,7 +1937,7 @@ CDD_wind_sim = np.multiply(NW_sim_W,binary_CDD_sim)
 HDD_wind_sim = np.multiply(NW_sim_W,binary_HDD_sim)
 
 #Need Month,Day,Year,8 14 3 BPA_wind，BPA_hydro
-sim_BPA_hydro = pd.read_csv('PNW_hydro/FCRPS/Modeled_BPA_dams.csv',header=None)
+sim_BPA_hydro = pd.read_csv('PNW_hydro/FCRPS/Modeled_BPAT_dams.csv',header=None)
 sim_BPA_hydro=sim_BPA_hydro.values
 sim_BPA_hydro=np.sum(sim_BPA_hydro,axis=1)/24
 
