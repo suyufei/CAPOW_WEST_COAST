@@ -15,7 +15,7 @@ import numpy as np
 # PNW zone using FCRPS, Willamette, and missing dams. 
 
 # FCRPS
-df_FCRPS = pd.read_csv('PNW_hydro/FCRPS/Modeled_BPA_dams.csv',header=None)
+df_FCRPS = pd.read_csv('PNW_hydro/FCRPS/Total_PNW_dams.csv',header=None)
 FCRPS = df_FCRPS.values
 F = np.sum(FCRPS,axis=1)
 
