@@ -116,8 +116,9 @@ def exchange(year,W):
     hydro = hydro.reset_index()
     df_mins = pd.read_excel('Hydro_setup/Minimum_hydro_profiles.xlsx',header=0)
     
+    # includes 1.85 scaling factor for missing dams that look like Willamette
     for i in range(0,len(hydro)):
-        hydro.loc[i,'PNW'] = hydro.loc[i,'PNW'] + W.loc[i,'W']
+        hydro.loc[i,'PNW'] = hydro.loc[i,'PNW'] + W.loc[i,'W']*1.85
     
     for i in range(0,len(hydro)):
     
