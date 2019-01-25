@@ -3190,6 +3190,7 @@ BPAT_modeled(:,21)=Unmodeled(:,15); %Yakama Drop
 
 generation(:,48)=total_unmodeled;
 Total_generation=generation;
+Total_generation(:,[1,2,4,5,16])=[];
 %BPA owned dams
 Modeled=Modeled(123:length(Modeled)-243,:);
 %BPAT dams
