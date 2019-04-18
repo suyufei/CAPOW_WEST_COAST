@@ -39,7 +39,7 @@ def sim(days):
     
     df_gen_CA = pd.read_csv('../Model_setup/CA_data_file/generators.csv',header=0)
     CA_list = df_gen_CA.columns.tolist()
-    df_gen_PNW = pd.read_csv('../Model_setup/PNW_data_file/generators2.csv',header=0)
+    df_gen_PNW = pd.read_csv('../Model_setup/PNW_data_file/generators.csv',header=0)
     CA_gen = df_gen_CA.values 
     PNW_gen = df_gen_PNW.values
     df_generators = pd.DataFrame(np.vstack((CA_gen,PNW_gen)))
